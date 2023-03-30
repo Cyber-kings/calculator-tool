@@ -1,0 +1,57 @@
+import os 
+import colorama 
+import time
+from colorama import Fore,Style
+
+def run():
+    
+ def list():
+    print('  [+] 1')
+    print('  [-] 2')
+    print('  [÷] 3')
+    
+ list()
+
+ print()
+ X = int(input('Select Option->'))
+    
+ if X==1:
+        os.system('clear')
+        Z = int(input('Entet 1st Number-->'))
+        X = int(input('Enter 2nd Number-->'))
+        sum = Z + X
+        print (sum)
+        print()
+        G = input('enter y to restart-->')
+        
+        if G=='y':
+            os.system('clear')
+            os.system(run())
+            
+        
+ elif X==2:
+        os.system('clear')
+        B = int(input('Entet 1st Number-->'))
+        K = int(input('Enter 2nd Number-->'))
+        sm = B - K
+        print (sm) 
+        print()
+        G = input('enter y to restart-->')
+        
+        if G=='y':
+            os.system('clear')
+            os.system(run())
+            
+ elif X==3:
+        os.system('clear')
+        O = int(input('Entet 1st Number-->'))
+        P = int(input('Enter 2nd Number-->'))
+        um = O / P
+        print (um) 
+        print()
+        G = input('enter y to restart-->')
+        
+        if G=='y':
+            os.system('clear')
+            os.system(run())
+run()
